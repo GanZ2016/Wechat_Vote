@@ -12,7 +12,7 @@ from random import randint
 # 生成指定位数的随机字符串，字符为字母或数字
 def getRandomString(id_length):
     charSeq = string.ascii_letters + string.digits
-    randString = 'oZBX'
+    randString = 'oZBXij'
     for i in range(id_length):
         randString += random.choice(charSeq)
     return randString
@@ -87,7 +87,8 @@ while True:
         voteCount += 1
         print(json)
         print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
-        next_people_time = random_sleep_time(2)
+        # next_people_time = random_sleep_time(2)
+        next_people_time = randint(2, 10)
         print('Vote Count: ' + str(voteCount))
         print('Wait', next_people_time, 's next vote\n')
         time.sleep(next_people_time)
