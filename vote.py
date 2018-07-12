@@ -52,8 +52,8 @@ voteCount = 0;
 while True:
     wechatOpenId = getRandomString(24);
     #wechatOpenId = 'oZBX3qpqgmIDaBOUh7hD2oGOF8cT';
-    contentid = '46102'
-    wechat_data = {'contentid': contentid, 'sectionid': '2563','openid':wechatOpenId}
+    contentid = '48888'
+    wechat_data = {'contentid': contentid, 'sectionid': '2345','openid':wechatOpenId}
     data = urllib.parse.urlencode(wechat_data).encode(encoding='utf-8')
     #postParams = urllib.urlencode(wechat_data)
     print(wechatOpenId)
